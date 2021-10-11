@@ -15,6 +15,7 @@
 		A5928F30271205F600BEA4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5928F2E271205F600BEA4F7 /* LaunchScreen.storyboard */; };
 		A5928F39271206DE00BEA4F7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */; };
 		A5928F402712FA9400BEA4F7 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */; };
+		A5928F462714C87700BEA4F7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F452714C87600BEA4F7 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5928F31271205F600BEA4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		A5928F452714C87600BEA4F7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				A5928F23271205F300BEA4F7 /* AppDelegate.swift */,
 				A5928F25271205F300BEA4F7 /* SceneDelegate.swift */,
+				A5928F452714C87600BEA4F7 /* NetworkService.swift */,
 				A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */,
 				A5928F27271205F300BEA4F7 /* ViewController.swift */,
 				A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */,
@@ -147,6 +150,7 @@
 				A5928F24271205F300BEA4F7 /* AppDelegate.swift in Sources */,
 				A5928F39271206DE00BEA4F7 /* MainTabBarController.swift in Sources */,
 				A5928F402712FA9400BEA4F7 /* PhotosCollectionViewController.swift in Sources */,
+				A5928F462714C87700BEA4F7 /* NetworkService.swift in Sources */,
 				A5928F26271205F300BEA4F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

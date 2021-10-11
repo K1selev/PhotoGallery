@@ -8,6 +8,9 @@
 import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
+    
+    var networkService = NetworkService()
+    
     //lazy инициализируется только когда нажимаем
     //пустой closure
     private lazy var addBarButtonItem: UIBarButtonItem = {
@@ -64,6 +67,7 @@ class PhotosCollectionViewController: UICollectionViewController {
         searchController.hidesNavigationBarDuringPresentation = false
         //без затемнения
         searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
     }
     
     //MARK: - UICollectionViewDataSource,  UICollectionViewDelegate
@@ -79,4 +83,18 @@ class PhotosCollectionViewController: UICollectionViewController {
         cell.backgroundColor = .red
         return cell
     }
+}
+
+//MARK: - UISearchBarDelegate
+
+extension PhotosCollectionViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            print(searchText)
+        
+        networkService.request(searchTerm: searchText) { (_, _) in
+            print("123")
+        }
+    }
+    
 }
