@@ -66,7 +66,6 @@
 		A5928F22271205F300BEA4F7 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
-				A5928F502715F24A00BEA4F7 /* Models */,
 				A5928F23271205F300BEA4F7 /* AppDelegate.swift */,
 				A5928F25271205F300BEA4F7 /* SceneDelegate.swift */,
 				A5928F482715DAFD00BEA4F7 /* Service */,
@@ -84,6 +83,7 @@
 		A5928F482715DAFD00BEA4F7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A5928F502715F24A00BEA4F7 /* Models */,
 				A5928F452714C87600BEA4F7 /* NetworkService.swift */,
 				A5928F4A2715EFB800BEA4F7 /* NetworkDataFetcher.swift */,
 			);
