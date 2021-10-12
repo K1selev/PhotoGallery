@@ -16,6 +16,8 @@
 		A5928F39271206DE00BEA4F7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */; };
 		A5928F402712FA9400BEA4F7 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */; };
 		A5928F462714C87700BEA4F7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F452714C87600BEA4F7 /* NetworkService.swift */; };
+		A5928F4B2715EFB800BEA4F7 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F4A2715EFB800BEA4F7 /* NetworkDataFetcher.swift */; };
+		A5928F4E2715F23500BEA4F7 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F4D2715F23500BEA4F7 /* SearchResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		A5928F452714C87600BEA4F7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A5928F4A2715EFB800BEA4F7 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		A5928F4D2715F23500BEA4F7 /* SearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,10 @@
 		A5928F22271205F300BEA4F7 /* PhotoGallery */ = {
 			isa = PBXGroup;
 			children = (
+				A5928F502715F24A00BEA4F7 /* Models */,
 				A5928F23271205F300BEA4F7 /* AppDelegate.swift */,
 				A5928F25271205F300BEA4F7 /* SceneDelegate.swift */,
-				A5928F452714C87600BEA4F7 /* NetworkService.swift */,
+				A5928F482715DAFD00BEA4F7 /* Service */,
 				A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */,
 				A5928F27271205F300BEA4F7 /* ViewController.swift */,
 				A5928F38271206DE00BEA4F7 /* MainTabBarController.swift */,
@@ -74,6 +79,23 @@
 				A5928F31271205F600BEA4F7 /* Info.plist */,
 			);
 			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		A5928F482715DAFD00BEA4F7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A5928F452714C87600BEA4F7 /* NetworkService.swift */,
+				A5928F4A2715EFB800BEA4F7 /* NetworkDataFetcher.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A5928F502715F24A00BEA4F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5928F4D2715F23500BEA4F7 /* SearchResults.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5928F4B2715EFB800BEA4F7 /* NetworkDataFetcher.swift in Sources */,
 				A5928F28271205F300BEA4F7 /* ViewController.swift in Sources */,
 				A5928F24271205F300BEA4F7 /* AppDelegate.swift in Sources */,
 				A5928F39271206DE00BEA4F7 /* MainTabBarController.swift in Sources */,
 				A5928F402712FA9400BEA4F7 /* PhotosCollectionViewController.swift in Sources */,
 				A5928F462714C87700BEA4F7 /* NetworkService.swift in Sources */,
+				A5928F4E2715F23500BEA4F7 /* SearchResults.swift in Sources */,
 				A5928F26271205F300BEA4F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
