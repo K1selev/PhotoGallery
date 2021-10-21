@@ -13,14 +13,14 @@ class PhotosCell: UICollectionViewCell {
     static let reuseId = "PhotosCell"
     
     private let checkmark: UIImageView = {
-        let image = UIImage(named: "checkmark")
+        let image = #imageLiteral(resourceName: "images")
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.alpha = 0
         return imageView
     }()
     
-    private let photoImageView: UIImageView = {
+    let photoImageView: UIImageView = {
         let imageView = UIImageView()
         //след. свойство чтоб закреплять ячейки с помощью кода
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -41,7 +41,7 @@ class PhotosCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            
+            updateSelectedState()
         }
     }
     
