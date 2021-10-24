@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		596C50D62766965DCAE26D5F /* Pods_PhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22062B1A1BF93C394CDEF579 /* Pods_PhotoGallery.framework */; };
+		A53E75B62724045200F3E837 /* LikesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E75B52724045200F3E837 /* LikesCollectionViewCell.swift */; };
+		A53E75B92724045400F3E837 /* LikesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E75B82724045400F3E837 /* LikesCollectionViewController.swift */; };
+		A53E75BD272404C900F3E837 /* UIKit + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53E75BC272404C900F3E837 /* UIKit + Extension.swift */; };
 		A5928F24271205F300BEA4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F23271205F300BEA4F7 /* AppDelegate.swift */; };
 		A5928F26271205F300BEA4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F25271205F300BEA4F7 /* SceneDelegate.swift */; };
 		A5928F28271205F300BEA4F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5928F27271205F300BEA4F7 /* ViewController.swift */; };
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		22062B1A1BF93C394CDEF579 /* Pods_PhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D77F96EE5D5463605B0806 /* Pods-PhotoGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoGallery.debug.xcconfig"; path = "Target Support Files/Pods-PhotoGallery/Pods-PhotoGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		A53E75B52724045200F3E837 /* LikesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A53E75B82724045400F3E837 /* LikesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesCollectionViewController.swift; sourceTree = "<group>"; };
+		A53E75BC272404C900F3E837 /* UIKit + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit + Extension.swift"; sourceTree = "<group>"; };
 		A5928F20271205F300BEA4F7 /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5928F23271205F300BEA4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5928F25271205F300BEA4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A53E75BF272404F500F3E837 /* Likes */ = {
+			isa = PBXGroup;
+			children = (
+				A53E75B82724045400F3E837 /* LikesCollectionViewController.swift */,
+				A53E75B52724045200F3E837 /* LikesCollectionViewCell.swift */,
+			);
+			path = Likes;
+			sourceTree = "<group>";
+		};
 		A5928F17271205F200BEA4F7 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				A5928F23271205F300BEA4F7 /* AppDelegate.swift */,
+				A53E75BF272404F500F3E837 /* Likes */,
+				A53E75BC272404C900F3E837 /* UIKit + Extension.swift */,
 				A5928F25271205F300BEA4F7 /* SceneDelegate.swift */,
 				A5928F482715DAFD00BEA4F7 /* Service */,
 				A5928F3F2712FA9400BEA4F7 /* PhotosCollectionViewController.swift */,
@@ -114,7 +131,6 @@
 				82D77F96EE5D5463605B0806 /* Pods-PhotoGallery.debug.xcconfig */,
 				F3838CFBB5DB8AD5DB207724 /* Pods-PhotoGallery.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -240,12 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53E75B92724045400F3E837 /* LikesCollectionViewController.swift in Sources */,
 				A5928F4B2715EFB800BEA4F7 /* NetworkDataFetcher.swift in Sources */,
 				A5928F28271205F300BEA4F7 /* ViewController.swift in Sources */,
 				A5928F24271205F300BEA4F7 /* AppDelegate.swift in Sources */,
+				A53E75B62724045200F3E837 /* LikesCollectionViewCell.swift in Sources */,
 				A5928F39271206DE00BEA4F7 /* MainTabBarController.swift in Sources */,
 				A5928F402712FA9400BEA4F7 /* PhotosCollectionViewController.swift in Sources */,
 				A5928F462714C87700BEA4F7 /* NetworkService.swift in Sources */,
+				A53E75BD272404C900F3E837 /* UIKit + Extension.swift in Sources */,
 				A5928F4E2715F23500BEA4F7 /* SearchResults.swift in Sources */,
 				A5928F26271205F300BEA4F7 /* SceneDelegate.swift in Sources */,
 				A5928F54271809DF00BEA4F7 /* PhotosCell.swift in Sources */,

@@ -16,12 +16,12 @@ class MainTabBarController: UITabBarController {
         
         //объект класса PhotosCollectionViewController
         let photosVC = PhotosCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
-        let navigationVC = UINavigationController(rootViewController: photosVC)
+        let likesVC = LikesCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
        
         //содержит все контроллеры которые будут в таббаре
         viewControllers = [
             generateNavigationController(rootViewController:  photosVC, title: "Photos", image: #imageLiteral(resourceName: "gallery")),
-            generateNavigationController(rootViewController:  ViewController(), title: "Favorites", image: #imageLiteral(resourceName: "pngwing.com"))
+            generateNavigationController(rootViewController:  likesVC, title: "Favorites", image: #imageLiteral(resourceName: "pngwing.com"))
         ]
     }
     //дублирующая функция
