@@ -21,4 +21,4 @@ Cоздавали кастомные UICollectionViewLayout, чтобы фото
 <img src="https://github.com/K1selev/PhotoGallery/blob/main/images/5.png" width="175" height="350"> <br/> <br/>
 
 На втором экране при нажатии и удержании на картинке появляется контекстное меню <br/> <br/>
-<img src="https://github.com/K1selev/PhotoGallery/blob/main/images/6.png" width="175" height="350">
+<img src="https://github.com/K1selev/PhotoGallery/blob/main/images/7.png" width="175" height="350">
